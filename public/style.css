@@ -1,0 +1,410 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Montserrat ;
+}
+
+/* adds some margin below the link sets  */
+/* min-height: 100% !important; */
+body{
+	
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	
+	
+	
+  }
+  nav{
+	  position: sticky !important
+	  ;
+	  z-index: 1 !important;
+  }
+  footer{
+	  border: solid;
+	 
+	  margin: 0 !important;
+	  padding: 1px !important;
+	  overflow: auto !important;
+
+	 
+	  position: sticky !important
+	  ;
+	 
+  }
+  .main {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+ } 
+
+
+  
+
+
+
+  @media only screen and (max-width:992px){
+  .navbar-collapse {
+	max-height: 60.9vh !important;
+	overflow-y: auto !important;
+	margin-top: 10px !important;
+	text-align: center;
+  
+	
+  }
+ 
+  .dropdown-menu{
+	width: 90% !important;
+	margin: auto;
+  }
+  }
+.dropdown-menu a{
+	font-size: 14px !important;
+}
+  .navbar .dropdown-menu div[class*="col"] {
+	  margin-bottom:1rem !important;
+   }
+   
+   .navbar .dropdown-menu {
+	 border:none;
+	
+   }
+   
+   /* breakpoint and up - mega dropdown styles */
+   @media screen and (min-width: 992px) {
+	 
+	 /* remove the padding from the navbar so the dropdown hover state is not broken */
+   .navbar {
+	 padding-top:0px;
+	 padding-bottom:0px;
+   }
+   
+   /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+	/* .navbar .nav-item {
+	 padding:.5rem .5rem;
+	 margin:0 .25rem;
+   }  */
+   
+   /* makes the dropdown full width  */
+   .navbar .dropdown {position:static;}
+   
+   .navbar .dropdown-menu {
+	 width:100%;
+	 left:0;
+	 right:0;
+   /*  height of nav-item  */
+	top:45px;
+	display:block;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.3s linear;
+	 
+   }
+  
+   
+	 
+	 /* shows the dropdown menu on hover */
+   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+	 display:block;
+	 visibility: visible;
+	 opacity: 1;
+	 transition: visibility 0s, opacity 0.3s linear;
+	 margin-top: 35px !important;
+   }
+	 
+	 .navbar .dropdown-menu {
+	   border: 1px solid rgba(0,0,0,.15);
+	   background-color: #fff;
+	 }
+   
+   
+	}
+   
+
+
+@media only screen and (max-width:992px){
+  .navbar{
+    text-align: center;
+  }
+}
+
+.productcarousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.productcarousel .item {
+	min-height: 330px;
+  	text-align: center;
+	overflow: hidden;
+}
+.productcarousel .item .img-box {
+	height: 300px !important;
+	width: 100%;
+	position: relative;
+}
+.img-box img{
+	width:100%;
+	height: 300px;
+}
+.img-box img:hover{
+	opacity: 0.5;
+}
+.productcarousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.productcarousel .item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.productcarousel .thumb-wrapper {
+	text-align: center;
+}
+.productcarousel .thumb-content {
+	padding: 15px;
+}
+.productcarousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.productcarousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+.productcarousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.productcarousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.productcarousel .item-price span {
+    color: darkgreen;
+		font-size: 110%;
+}
+.productcarousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.productcarousel .carousel-control.left i {
+	margin-right: -3px;
+}
+.productcarousel .productcarouselindicators {
+	/* margin: 50px auto; */
+	padding: 0 70px;
+}
+.productcarousel .item {
+	min-height: 330px;
+  	text-align: center;
+	overflow: hidden;
+}
+.productcarousel .item .img-box {
+	height: 300px !important;
+	width: 100%;
+	position: relative;
+}
+.productcarousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.productcarousel .item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+ .productcarousel .item .btn:hover {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+} 
+.productcarousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+} */
+.productcarousel .thumb-wrapper {
+	text-align: center;
+}
+.productcarousel .thumb-content {
+	padding: 15px;
+}
+.productcarousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.productcarousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+.productcarousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.productcarousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.productcarousel .item-price span {
+
+	font-size: 110%;
+}
+.productcarousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.productcarousel .carousel-control.left i {
+	margin-right: -3px;
+}
+.productcarousel .productcarouselindicators {
+	bottom: -50px;
+}
+.productcarouselindicators li, .productcarouselindicators li.active {
+	width: 15px;
+	/* height: px; */
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.productcarouselindicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.productcarouselindicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+  /* color: #ffc000; */
+  color: #FFBA00;
+}
+.productcarousel .productcarouselindicators {
+	bottom: -50px;
+}
+.productcarouselindicators li, .productcarouselindicators li.active {
+	width: 15px;
+	/* height: px; */
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.productcarouselindicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.productcarouselindicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+.ahd{
+	
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16) !important;
+	margin-left: 0px !important;
+	height: 150px !important;
+	background-color: white !important;
+	
+}
+footer{
+	background-color: #232323 !important;
+}
+
+.socialmedia_icons{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-top: 15px;
+	margin-left: 5px;
+	
+}
+.socialmedia_icons a{
+	color:white !important;
+}
+.copyrights hr{
+	
+	border-bottom: 1px solid  #999999 !important;
+}
+.card{
+	width: 270px !important;
+	height: auto !important;
+	border: none !important;
+	
+}
+.card img{
+	width: 100% !important;
+}
+@media only screen and (max-width:992px){
+	.card{
+		width: 200px !important;
+		height: auto !important;
+		text-align: center;
+		
+	}
+}
+dress img{
+	width: 100%;
+	
+}
+@media only screen and (max-width:992px){
+	.carousel-caption h5{
+		font-size: 20px !important;
+	}
+}
+@media only screen and (max-width:992px){
+	.card{
+		text-align: center !important
+		;
+		width: 100% !important;
+	}
+}
+.card img:hover{
+	opacity: 0.6 !important;
+}
+
+
